@@ -8,7 +8,6 @@ TODO:
     - Count the requests per Group in a time period
     - Additional Errors necessary?
 """
-
 import requests
 import os
 from enum import Enum
