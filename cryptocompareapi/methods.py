@@ -90,3 +90,8 @@ class CryptoCompareMethod(Enum):
         self.full_url = full_url
         self.caching = caching
         self.rateLimitGroup = rateLimitGroup
+
+    @property
+    def full_url(self):
+        """Get the full url to the API-method."""
+        return self.full_url
