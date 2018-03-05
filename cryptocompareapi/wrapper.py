@@ -13,22 +13,12 @@ import requests
 import os
 from enum import Enum
 
+from .exceptions import HttpError, TimeoutException, CryptoCompareError
+
 BASE_URL = "https://min-api.cryptocompare.com/data/"
 DEFAULT_EXCHANGE = "CCCAGG"
 
 DEFAULT_TIMEOUT = 5.0  # In seconds
-
-
-class HttpError(Exception):
-    """A HTTP Error occured and needs to be handled."""
-
-
-class TimeoutException(Exception):
-    """In case of a Sever timeout."""
-
-
-class CryptoCompareError(Exception):
-    """The API request resulted in a Error."""
 
 
 class RateLimitGroup(Enum):
